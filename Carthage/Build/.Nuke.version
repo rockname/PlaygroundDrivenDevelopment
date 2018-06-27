@@ -1,0 +1,9 @@
+{
+  "commitish" : "6.1.1",
+  "iOS" : [
+    {
+      "name" : "Nuke",
+      "hash" : "caad89cd5cbb599f115b98359356a596d730a2d69cabe85b5d6e33a333197523"
+    }
+  ]
+}

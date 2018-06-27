@@ -1,0 +1,4 @@
+github "ReactiveX/RxSwift" "4.2.0"
+github "kean/Nuke" "6.1.1"
+github "mac-cain13/R.swift.Library" "v4.0.0"
+github "malcommac/SwiftDate" "4.5.1"

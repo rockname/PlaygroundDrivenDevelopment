@@ -1,0 +1,4 @@
+framework module SwiftDate {
+    header "SwiftDate-Swift.h"
+    requires objc
+}

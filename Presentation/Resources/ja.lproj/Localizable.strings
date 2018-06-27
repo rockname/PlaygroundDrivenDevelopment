@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  PlaygroundDrivenDevelopment
+
+  Created by rockname on 2018/06/27.
+  Copyright © 2018年 rockname. All rights reserved.
+*/
+"home" = "ホーム";
+"empty" = "投稿がありません。\nあなたの身の回りの出来事を投稿しよう！";
