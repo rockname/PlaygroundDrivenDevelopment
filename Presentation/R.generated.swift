@@ -8,48 +8,48 @@ import Rswift
 import UIKit
 
 /// This `R` struct is generated and contains references to static resources.
-struct R: Rswift.Validatable {
+public struct R: Rswift.Validatable {
   fileprivate static let applicationLocale = hostingBundle.preferredLocalizations.first.flatMap(Locale.init) ?? Locale.current
   fileprivate static let hostingBundle = Bundle(for: R.Class.self)
   
-  static func validate() throws {
+  public static func validate() throws {
     try intern.validate()
   }
   
   /// This `R.color` struct is generated, and contains static references to 0 colors.
-  struct color {
+  public struct color {
     fileprivate init() {}
   }
   
   /// This `R.file` struct is generated, and contains static references to 0 files.
-  struct file {
+  public struct file {
     fileprivate init() {}
   }
   
   /// This `R.font` struct is generated, and contains static references to 0 fonts.
-  struct font {
+  public struct font {
     fileprivate init() {}
   }
   
   /// This `R.image` struct is generated, and contains static references to 0 images.
-  struct image {
+  public struct image {
     fileprivate init() {}
   }
   
   /// This `R.nib` struct is generated, and contains static references to 2 nibs.
-  struct nib {
+  public struct nib {
     /// Nib `EmptyTableViewCell`.
-    static let emptyTableViewCell = _R.nib._EmptyTableViewCell()
+    public static let emptyTableViewCell = _R.nib._EmptyTableViewCell()
     /// Nib `TwitterTableViewCell`.
-    static let twitterTableViewCell = _R.nib._TwitterTableViewCell()
+    public static let twitterTableViewCell = _R.nib._TwitterTableViewCell()
     
     /// `UINib(name: "EmptyTableViewCell", in: bundle)`
-    static func emptyTableViewCell(_: Void = ()) -> UIKit.UINib {
+    public static func emptyTableViewCell(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.emptyTableViewCell)
     }
     
     /// `UINib(name: "TwitterTableViewCell", in: bundle)`
-    static func twitterTableViewCell(_: Void = ()) -> UIKit.UINib {
+    public static func twitterTableViewCell(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.twitterTableViewCell)
     }
     
@@ -57,27 +57,27 @@ struct R: Rswift.Validatable {
   }
   
   /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
-  struct reuseIdentifier {
+  public struct reuseIdentifier {
     /// Reuse identifier `EmptyTableViewCell`.
-    static let emptyTableViewCell: Rswift.ReuseIdentifier<EmptyTableViewCell> = Rswift.ReuseIdentifier(identifier: "EmptyTableViewCell")
+    public static let emptyTableViewCell: Rswift.ReuseIdentifier<EmptyTableViewCell> = Rswift.ReuseIdentifier(identifier: "EmptyTableViewCell")
     /// Reuse identifier `TwitterTableViewCell`.
-    static let twitterTableViewCell: Rswift.ReuseIdentifier<TwitterTableViewCell> = Rswift.ReuseIdentifier(identifier: "TwitterTableViewCell")
+    public static let twitterTableViewCell: Rswift.ReuseIdentifier<TwitterTableViewCell> = Rswift.ReuseIdentifier(identifier: "TwitterTableViewCell")
     
     fileprivate init() {}
   }
   
   /// This `R.segue` struct is generated, and contains static references to 0 view controllers.
-  struct segue {
+  public struct segue {
     fileprivate init() {}
   }
   
   /// This `R.storyboard` struct is generated, and contains static references to 1 storyboards.
-  struct storyboard {
+  public struct storyboard {
     /// Storyboard `Twitter`.
-    static let twitter = _R.storyboard.twitter()
+    public static let twitter = _R.storyboard.twitter()
     
     /// `UIStoryboard(name: "Twitter", bundle: ...)`
-    static func twitter(_: Void = ()) -> UIKit.UIStoryboard {
+    public static func twitter(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.twitter)
     }
     
@@ -85,29 +85,29 @@ struct R: Rswift.Validatable {
   }
   
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
-  struct string {
+  public struct string {
     /// This `R.string.localizable` struct is generated, and contains static references to 2 localization keys.
-    struct localizable {
+    public struct localizable {
       /// en translation: Home
       /// 
       /// Locales: en, ja
-      static let home = Rswift.StringResource(key: "home", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ja"], comment: nil)
+      public static let home = Rswift.StringResource(key: "home", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ja"], comment: nil)
       /// en translation: No statuses here. Let's post anything you think！ 
       /// 
       /// Locales: en, ja
-      static let empty = Rswift.StringResource(key: "empty", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ja"], comment: nil)
+      public static let empty = Rswift.StringResource(key: "empty", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ja"], comment: nil)
       
       /// en translation: Home
       /// 
       /// Locales: en, ja
-      static func home(_: Void = ()) -> String {
+      public static func home(_: Void = ()) -> String {
         return NSLocalizedString("home", bundle: R.hostingBundle, comment: "")
       }
       
       /// en translation: No statuses here. Let's post anything you think！ 
       /// 
       /// Locales: en, ja
-      static func empty(_: Void = ()) -> String {
+      public static func empty(_: Void = ()) -> String {
         return NSLocalizedString("empty", bundle: R.hostingBundle, comment: "")
       }
       
@@ -130,30 +130,30 @@ struct R: Rswift.Validatable {
   fileprivate init() {}
 }
 
-struct _R {
-  struct nib {
-    struct _EmptyTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
-      typealias ReusableType = EmptyTableViewCell
+public struct _R {
+  public struct nib {
+    public struct _EmptyTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      public typealias ReusableType = EmptyTableViewCell
       
-      let bundle = R.hostingBundle
-      let identifier = "EmptyTableViewCell"
-      let name = "EmptyTableViewCell"
+      public let bundle = R.hostingBundle
+      public let identifier = "EmptyTableViewCell"
+      public let name = "EmptyTableViewCell"
       
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> EmptyTableViewCell? {
+      public func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> EmptyTableViewCell? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? EmptyTableViewCell
       }
       
       fileprivate init() {}
     }
     
-    struct _TwitterTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
-      typealias ReusableType = TwitterTableViewCell
+    public struct _TwitterTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      public typealias ReusableType = TwitterTableViewCell
       
-      let bundle = R.hostingBundle
-      let identifier = "TwitterTableViewCell"
-      let name = "TwitterTableViewCell"
+      public let bundle = R.hostingBundle
+      public let identifier = "TwitterTableViewCell"
+      public let name = "TwitterTableViewCell"
       
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> TwitterTableViewCell? {
+      public func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> TwitterTableViewCell? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? TwitterTableViewCell
       }
       
@@ -163,12 +163,12 @@ struct _R {
     fileprivate init() {}
   }
   
-  struct storyboard {
-    struct twitter: Rswift.StoryboardResourceWithInitialControllerType {
-      typealias InitialController = TwitterTableViewController
+  public struct storyboard {
+    public struct twitter: Rswift.StoryboardResourceWithInitialControllerType {
+      public typealias InitialController = TwitterTableViewController
       
-      let bundle = R.hostingBundle
-      let name = "Twitter"
+      public let bundle = R.hostingBundle
+      public let name = "Twitter"
       
       fileprivate init() {}
     }
