@@ -26,9 +26,11 @@ public class TwitterTableViewController: UITableViewController {
         tableView.dataSource = dataSource
 
         tableView.register(R.nib.twitterTableViewCell)
+        tableView.register(R.nib.emptyTableViewCell)
     }
 
     public func load(_ statuses: [Status]) {
+        tableView.separatorStyle = statuses.isEmpty ? .none : .singleLine
         dataSource.load(statuses)
         tableView.reloadData()
     }
