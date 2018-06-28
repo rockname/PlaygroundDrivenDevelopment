@@ -12,13 +12,11 @@
 		DF1A347220E3CCB200218A6A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1A347120E3CCB200218A6A /* R.generated.swift */; };
 		DF6B387420E3B64D005E30EA /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6B386E20E3B64C005E30EA /* Nuke.framework */; };
 		DF6B387520E3B64D005E30EA /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6B386F20E3B64C005E30EA /* RxSwift.framework */; };
-		DF6B387620E3B64D005E30EA /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6B386F20E3B64C005E30EA /* RxSwift.framework */; };
 		DF6B387720E3B64D005E30EA /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6B387020E3B64C005E30EA /* SwiftDate.framework */; };
 		DF6B387820E3B64D005E30EA /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6B387020E3B64C005E30EA /* SwiftDate.framework */; };
 		DF6B387920E3B64D005E30EA /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6B387120E3B64D005E30EA /* Rswift.framework */; };
 		DF6B387A20E3B64D005E30EA /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6B387120E3B64D005E30EA /* Rswift.framework */; };
 		DF6B387B20E3B64D005E30EA /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6B387220E3B64D005E30EA /* RxCocoa.framework */; };
-		DF6B387C20E3B64D005E30EA /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6B387220E3B64D005E30EA /* RxCocoa.framework */; };
 		DF6B387D20E3B66A005E30EA /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6B386E20E3B64C005E30EA /* Nuke.framework */; };
 		DF6B387E20E3B66A005E30EA /* Nuke.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF6B386E20E3B64C005E30EA /* Nuke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DF6B388020E3B66A005E30EA /* Rswift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF6B387120E3B64D005E30EA /* Rswift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -187,10 +185,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF6B389A20E3B8BD005E30EA /* Mock.framework in Frameworks */,
-				DF6B387C20E3B64D005E30EA /* RxCocoa.framework in Frameworks */,
 				DF6B387820E3B64D005E30EA /* SwiftDate.framework in Frameworks */,
 				DF6B387A20E3B64D005E30EA /* Rswift.framework in Frameworks */,
-				DF6B387620E3B64D005E30EA /* RxSwift.framework in Frameworks */,
 				DF6B387420E3B64D005E30EA /* Nuke.framework in Frameworks */,
 				DF9D005E20E1DA8E003BBB8A /* Domain.framework in Frameworks */,
 			);
@@ -654,7 +650,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$SRCROOT/rswift\" generate \"$SRCROOT/Presentation\" ";
+			shellScript = "\"$SRCROOT/rswift\" generate \"$SRCROOT/Presentation\" --accessLevel public";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -953,7 +949,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Framesroks",
 				);
 				INFOPLIST_FILE = PlaygroundDrivenDevelopment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -977,7 +972,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Framesroks",
 				);
 				INFOPLIST_FILE = PlaygroundDrivenDevelopment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1005,7 +999,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Framesroks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Presentation/Info.plist;
@@ -1040,7 +1033,6 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Framesroks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Presentation/Info.plist;
