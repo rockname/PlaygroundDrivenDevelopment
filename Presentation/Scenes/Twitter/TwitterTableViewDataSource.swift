@@ -9,7 +9,7 @@
 import Foundation
 import Domain
 
-class TwitterTableViewDataSource: NSObject, UITableViewDataSource {
+public class TwitterTableViewDataSource: NSObject, UITableViewDataSource {
     private(set) var values: [[(value: Any, reusableId: String)]] = []
 
     func configureCell(_ cell: UITableViewCell, withValue value: Any) {
@@ -32,15 +32,15 @@ class TwitterTableViewDataSource: NSObject, UITableViewDataSource {
         }
     }
 
-    func numberOfSections(in tableView: UITableView) -> Int {
+    public func numberOfSections(in tableView: UITableView) -> Int {
         return values.count
     }
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return values[section].count
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let (value, reusableId) = self.values[indexPath.section][indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: reusableId, for: indexPath)
         self.configureCell(cell, withValue: value)
