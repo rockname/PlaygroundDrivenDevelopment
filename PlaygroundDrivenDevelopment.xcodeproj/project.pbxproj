@@ -636,7 +636,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$SRCROOT/rswift\" generate \"$SRCROOT/Mock\"";
+			shellScript = "\"$SRCROOT/bin/rswift\" generate \"$SRCROOT/Mock\"";
 		};
 		DF9D006320E1DEB2003BBB8A /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -650,7 +650,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$SRCROOT/rswift\" generate \"$SRCROOT/Presentation\" --accessLevel public";
+			shellScript = "\"$SRCROOT/bin/rswift\" generate \"$SRCROOT/Presentation\" --accessLevel public";
 		};
 /* End PBXShellScriptBuildPhase section */
 
