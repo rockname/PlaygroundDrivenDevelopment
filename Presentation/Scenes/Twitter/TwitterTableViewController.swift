@@ -17,7 +17,7 @@ public class TwitterTableViewController: UITableViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.title = R.string.localizable.home()
+        navigationItem.title = R.string.localizable.home.localized()
         configureTableView()
         load(MockContainer.shared.mockStatuses)
     }

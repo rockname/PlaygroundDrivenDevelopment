@@ -15,7 +15,7 @@ public class EmptyTableViewCell: UITableViewCell {
     override public func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.emptyLabel.text = R.string.localizable.empty()
+        self.emptyLabel.text = R.string.localizable.empty.localized()
     }
 
     override public func setSelected(_ selected: Bool, animated: Bool) {
