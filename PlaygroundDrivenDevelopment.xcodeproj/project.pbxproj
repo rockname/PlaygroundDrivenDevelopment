@@ -10,6 +10,8 @@
 		DF1A346E20E3C7F600218A6A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF6B38A320E3C4B6005E30EA /* Localizable.strings */; };
 		DF1A346F20E3CC1700218A6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF9D007020E20332003BBB8A /* Assets.xcassets */; };
 		DF1A347220E3CCB200218A6A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1A347120E3CCB200218A6A /* R.generated.swift */; };
+		DF51120D212E99EE007E216C /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF51120C212E99EE007E216C /* Language.swift */; };
+		DF511212212EB3D1007E216C /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF51120F212EB1DF007E216C /* AppEnvironment.swift */; };
 		DF6B387420E3B64D005E30EA /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6B386E20E3B64C005E30EA /* Nuke.framework */; };
 		DF6B387520E3B64D005E30EA /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6B386F20E3B64C005E30EA /* RxSwift.framework */; };
 		DF6B387720E3B64D005E30EA /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6B387020E3B64C005E30EA /* SwiftDate.framework */; };
@@ -113,6 +115,8 @@
 
 /* Begin PBXFileReference section */
 		DF1A347120E3CCB200218A6A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		DF51120C212E99EE007E216C /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		DF51120F212EB1DF007E216C /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		DF6B386E20E3B64C005E30EA /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
 		DF6B386F20E3B64C005E30EA /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		DF6B387020E3B64C005E30EA /* SwiftDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftDate.framework; path = Carthage/Build/iOS/SwiftDate.framework; sourceTree = "<group>"; };
@@ -210,6 +214,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF51120E212E99F3007E216C /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				DF51120C212E99EE007E216C /* Language.swift */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
 		DF6B388D20E3B829005E30EA /* Mock */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,7 +290,9 @@
 			children = (
 				DF7C190220E0F50B00C0603B /* Domain.h */,
 				DF7C190320E0F50B00C0603B /* Info.plist */,
+				DF51120F212EB1DF007E216C /* AppEnvironment.swift */,
 				DF9D005C20E1D9DD003BBB8A /* Entities */,
+				DF51120E212E99F3007E216C /* Libraries */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -690,6 +704,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF9D005B20E1D9D9003BBB8A /* Status.swift in Sources */,
+				DF51120D212E99EE007E216C /* Language.swift in Sources */,
+				DF511212212EB3D1007E216C /* AppEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
