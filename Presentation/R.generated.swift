@@ -92,7 +92,7 @@ public struct R: Rswift.Validatable {
       /// 
       /// Locales: en, ja
       public static let home = Rswift.StringResource(key: "home", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ja"], comment: nil)
-      /// en translation: No statuses here. Let's post anything you think！ 
+      /// en translation: No statuses here. Let's post anything you think！
       /// 
       /// Locales: en, ja
       public static let empty = Rswift.StringResource(key: "empty", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ja"], comment: nil)
@@ -104,7 +104,7 @@ public struct R: Rswift.Validatable {
         return NSLocalizedString("home", bundle: R.hostingBundle, comment: "")
       }
       
-      /// en translation: No statuses here. Let's post anything you think！ 
+      /// en translation: No statuses here. Let's post anything you think！
       /// 
       /// Locales: en, ja
       public static func empty(_: Void = ()) -> String {
