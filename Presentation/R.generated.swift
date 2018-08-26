@@ -86,8 +86,24 @@ public struct R: Rswift.Validatable {
   
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   public struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 2 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 6 localization keys.
     public struct localizable {
+      /// en translation: %#@days@
+      /// 
+      /// Locales: en, ja
+      public static let dDaySAgo = Rswift.StringResource(key: "%d day(s) ago", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ja"], comment: nil)
+      /// en translation: %#@hours@
+      /// 
+      /// Locales: en, ja
+      public static let dHourSAgo = Rswift.StringResource(key: "%d hour(s) ago", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ja"], comment: nil)
+      /// en translation: %#@minutes@
+      /// 
+      /// Locales: en, ja
+      public static let dMinuteSAgo = Rswift.StringResource(key: "%d minute(s) ago", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ja"], comment: nil)
+      /// en translation: %#@seconds@
+      /// 
+      /// Locales: en, ja
+      public static let dSecondSAgo = Rswift.StringResource(key: "%d second(s) ago", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ja"], comment: nil)
       /// en translation: Home
       /// 
       /// Locales: en, ja
@@ -96,6 +112,34 @@ public struct R: Rswift.Validatable {
       /// 
       /// Locales: en, ja
       public static let empty = Rswift.StringResource(key: "empty", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en", "ja"], comment: nil)
+      
+      /// en translation: %#@days@
+      /// 
+      /// Locales: en, ja
+      public static func dDaySAgo(days value1: Int) -> String {
+        return String(format: NSLocalizedString("%d day(s) ago", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// en translation: %#@hours@
+      /// 
+      /// Locales: en, ja
+      public static func dHourSAgo(hours value1: Int) -> String {
+        return String(format: NSLocalizedString("%d hour(s) ago", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// en translation: %#@minutes@
+      /// 
+      /// Locales: en, ja
+      public static func dMinuteSAgo(minutes value1: Int) -> String {
+        return String(format: NSLocalizedString("%d minute(s) ago", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
+      
+      /// en translation: %#@seconds@
+      /// 
+      /// Locales: en, ja
+      public static func dSecondSAgo(seconds value1: Int) -> String {
+        return String(format: NSLocalizedString("%d second(s) ago", bundle: R.hostingBundle, comment: ""), locale: R.applicationLocale, value1)
+      }
       
       /// en translation: Home
       /// 

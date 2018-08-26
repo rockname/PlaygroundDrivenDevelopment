@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C2BDAE32132D7E000E058E3 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 4C2BDAE52132D7E000E058E3 /* Localizable.stringsdict */; };
 		DF1A346E20E3C7F600218A6A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF6B38A320E3C4B6005E30EA /* Localizable.strings */; };
 		DF1A346F20E3CC1700218A6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF9D007020E20332003BBB8A /* Assets.xcassets */; };
 		DF1A347220E3CCB200218A6A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1A347120E3CCB200218A6A /* R.generated.swift */; };
@@ -409,6 +410,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4C2BDAE42132D7E000E058E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		4C2BDAE62132D7E200E058E3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ja; path = ja.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		DF1A347120E3CCB200218A6A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		DF48F2AA21318E6A00F8AA60 /* PlaygroundDrivenDevelopment.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PlaygroundDrivenDevelopment.playground; sourceTree = "<group>"; };
 		DF48F2AC21318EAC00F8AA60 /* Nuke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nuke.xcodeproj; path = Carthage/Checkouts/Nuke/Nuke.xcodeproj; sourceTree = "<group>"; };
@@ -775,6 +778,7 @@
 			isa = PBXGroup;
 			children = (
 				DF6B38A320E3C4B6005E30EA /* Localizable.strings */,
+				4C2BDAE52132D7E000E058E3 /* Localizable.stringsdict */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1318,6 +1322,7 @@
 				DF1A346E20E3C7F600218A6A /* Localizable.strings in Resources */,
 				DF9D006B20E1E1DB003BBB8A /* EmptyTableViewCell.xib in Resources */,
 				DF7C192D20E0FA6C00C0603B /* Twitter.storyboard in Resources */,
+				4C2BDAE32132D7E000E058E3 /* Localizable.stringsdict in Resources */,
 				DF7C193220E0FB0300C0603B /* TwitterTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1444,6 +1449,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4C2BDAE52132D7E000E058E3 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C2BDAE42132D7E000E058E3 /* en */,
+				4C2BDAE62132D7E200E058E3 /* ja */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
 		DF6B38A320E3C4B6005E30EA /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
