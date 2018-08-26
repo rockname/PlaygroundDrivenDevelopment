@@ -56,7 +56,7 @@ public class MockContainer {
             body: "I'm so fun.",
             iconUrl: unknownIconUrl,
             attachmentImageUrls: [],
-            createdAt: Date() - 1.day
+            createdAt: Date() - 1.minute
         )
 
         mockStatus02 = Status(
@@ -66,7 +66,7 @@ public class MockContainer {
             body: "Yeah!",
             iconUrl: unknownIconUrl,
             attachmentImageUrls: [],
-            createdAt: Date() - 2.day
+            createdAt: Date() - 1.hour
         )
         mockStatus03 = Status(
             id: "4",
@@ -75,7 +75,7 @@ public class MockContainer {
             body: "This is a sample text.",
             iconUrl: unknownIconUrl,
             attachmentImageUrls: [],
-            createdAt: Date() - 3.day
+            createdAt: Date() - 1.day
         )
         mockTooLongStatus = Status(
             id: "5",
@@ -86,7 +86,7 @@ public class MockContainer {
                 """,
             iconUrl: unknownIconUrl,
             attachmentImageUrls: [],
-            createdAt: Date() - 4.day
+            createdAt: Date() - 7.days
         )
 
     }
