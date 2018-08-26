@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C2BDAE32132D7E000E058E3 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 4C2BDAE52132D7E000E058E3 /* Localizable.stringsdict */; };
+		4C2BDAE82132DB4700E058E3 /* Date+timeago.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2BDAE72132DB4700E058E3 /* Date+timeago.swift */; };
 		DF1A346E20E3C7F600218A6A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF6B38A320E3C4B6005E30EA /* Localizable.strings */; };
 		DF1A346F20E3CC1700218A6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF9D007020E20332003BBB8A /* Assets.xcassets */; };
 		DF1A347220E3CCB200218A6A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1A347120E3CCB200218A6A /* R.generated.swift */; };
@@ -412,6 +413,7 @@
 /* Begin PBXFileReference section */
 		4C2BDAE42132D7E000E058E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		4C2BDAE62132D7E200E058E3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ja; path = ja.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		4C2BDAE72132DB4700E058E3 /* Date+timeago.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+timeago.swift"; sourceTree = "<group>"; };
 		DF1A347120E3CCB200218A6A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		DF48F2AA21318E6A00F8AA60 /* PlaygroundDrivenDevelopment.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PlaygroundDrivenDevelopment.playground; sourceTree = "<group>"; };
 		DF48F2AC21318EAC00F8AA60 /* Nuke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nuke.xcodeproj; path = Carthage/Checkouts/Nuke/Nuke.xcodeproj; sourceTree = "<group>"; };
@@ -788,6 +790,7 @@
 			children = (
 				DF9D006D20E1EA47003BBB8A /* UIImageView+loadImage.swift */,
 				DF511213213187A1007E216C /* StringResourceType+localized.swift */,
+				4C2BDAE72132DB4700E058E3 /* Date+timeago.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1400,6 +1403,7 @@
 				DF9D005920E1D8E5003BBB8A /* TwitterTableViewDataSource.swift in Sources */,
 				DF9D006620E1DF3E003BBB8A /* R.generated.swift in Sources */,
 				DF9D006E20E1EA47003BBB8A /* UIImageView+loadImage.swift in Sources */,
+				4C2BDAE82132DB4700E058E3 /* Date+timeago.swift in Sources */,
 				DF7C192820E0F8A900C0603B /* TwitterTableViewController.swift in Sources */,
 				DF7C193120E0FB0300C0603B /* TwitterTableViewCell.swift in Sources */,
 				DF9D006A20E1E1DB003BBB8A /* EmptyTableViewCell.swift in Sources */,

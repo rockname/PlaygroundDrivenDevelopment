@@ -35,7 +35,7 @@ public class TwitterTableViewCell: UITableViewCell {
         self.iconImageView.loadImage(with: status.iconUrl)
         self.userNameLabel.text = status.userNmae
         self.userIdLabel.text = "@" + status.userId
-        self.postedAtLabel.text = status.createdAt.string(custom: "MM/dd HH:mm")
+        self.postedAtLabel.text = status.createdAt.timeagoFromNow
         self.bodyLabel.text = status.body
     }
 }
