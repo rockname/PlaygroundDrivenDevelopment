@@ -3,6 +3,8 @@ This is a sample code to learn playground driven development.
 
 You could develop faster on the styling and development process.
 
+![](https://user-images.githubusercontent.com/8536870/44943888-c9001f80-ae08-11e8-8cee-cce2c610619e.gif)
+
 ## Requirements
 Run Playgrounds step by step function is introduced from **Xcode 10**.
 
